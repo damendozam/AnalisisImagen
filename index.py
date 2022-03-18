@@ -32,7 +32,12 @@ imshow('Otsu',th3)
 #Letras
 #print(pytesseract.image_to_string(th3))
 
-kernel = np.ones((5,5), np.uint8)
+kernel = np.ones((5,5), np.uint8)kernel2 = np.zeros((3,3), np.uint8)
+kernel2[0][1]=1
+kernel2[1][1]=1
+kernel2[2][1]=1
+kernel2[1][0]=1
+kernel2[1][2]=1
  
 # The first parameter is the original image,
 # kernel is the matrix with which image is
