@@ -33,6 +33,7 @@ imshow('Otsu',th3)
 #print(pytesseract.image_to_string(th3))
 
 kernel = np.ones((5,5), np.uint8)kernel2 = np.zeros((3,3), np.uint8)
+kernel2 = np.zeros((3,3), np.uint8)
 kernel2[0][1]=1
 kernel2[1][1]=1
 kernel2[2][1]=1
